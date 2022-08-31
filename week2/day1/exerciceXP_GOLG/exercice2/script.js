@@ -1,0 +1,10 @@
+let str1 = "mix";
+let str2 = "pod";
+let str11=str1.slice(0,2);
+let str12=str2.slice(0,2);
+str11=str11+"d";
+str12=str12+"x";
+console.log(str11);
+console.log(str12);
+let concatenation=str11+" "+str12;
+console.log(concatenation);
