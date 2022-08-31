@@ -1,0 +1,39 @@
+header{
+    background-color: rgba(204, 202, 199, 0.726);
+    padding: 6px;
+}
+h3,button{
+    display: inline;
+}
+.sign-in{
+    background-color: rgb(0, 89, 255);
+    float:right;
+    color: white;
+}
+.principal{
+    background-image: url(ecran.jpg);
+    width: 100%;
+    height: 400px;
+    color: white;
+    display: block;
+}
+.principal>p{
+    text-align: center;
+    position: relative;
+    top: 150px; 
+}
+.pied{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    text-align: center;
+}
+.fa-solid,.fa-regular{
+    font-size: 100px;
+    color:rgb(86, 230, 235) ;  
+}
+.element1,.element2,.element3{
+    display:inline;
+    position: relative;
+    top:30px;
+}

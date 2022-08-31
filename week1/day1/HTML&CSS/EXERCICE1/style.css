@@ -1,0 +1,28 @@
+span{
+    background-color: yellow;
+}
+h4{
+    text-decoration: underline;
+}
+div{
+    text-align: center;
+    align-items: center;
+}
+.diff{
+    text-align: center;
+    color: red;
+    border: 1px solid red;
+    width: 95.7%;  /* la largeur du block cellule*/
+}
+th,td{
+    border: 2px solid black;
+}
+.table{
+    width: 50%;
+    height: 30px; /* la hauteur du block cellule */
+}
+#image{
+    align-items: center;
+     text-align: center;
+     display: block; 
+}

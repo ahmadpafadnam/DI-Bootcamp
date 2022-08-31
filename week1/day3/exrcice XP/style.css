@@ -1,0 +1,25 @@
+body{
+    background-color: aliceblue;
+
+}
+h3{
+    text-decoration: underline;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.div2{
+    width: 60%;
+    align-self: flex-end;
+}
+.div1{
+    width: 30%;
+}
+header{
+   display: flex; 
+}
