@@ -16,7 +16,7 @@ infoAboutPerson("Alex",34,"noir");
 
 // exercice 2
 
-/*
+
 console.log("exerice 2");
 function calculateTip(){
     let montantFacture=parseFloat(prompt("Ebtrer le montant de la facture : ",));
@@ -35,7 +35,7 @@ function calculateTip(){
 }
 calculateTip();
 console.log(" le pourboire finale et la facture est : " +pourboireFacture +"§ ");
-*/
+
 
 // execice 3
 console.log("exercice 3")
@@ -110,15 +110,67 @@ changeEnough(0.75,[0,0,20,5]);
 console.log(result);
 
 
+
 // exercice 6
+console.log("execice 6");
 var nuit;
 var somme;
+var destination;
+var prix;
 function hotelCost(){
     do{
-        nuit=prompt("Entrer le nombre de nuit que vous souhaitez passer dans cet hotel ",);
-    }while(typeof(nuit)=='number');
+        nuit=parseInt(prompt("Entrer le nombre de nuit que vous souhaitez passer dans cet hotel ",));
+    }while(typeof(nuit)!='number');
     somme=nuit*140;
     return somme;
 }
 hotelCost();
 console.log(" le montant total de vos "+nuit +" nuit(s) vaut "+somme+ " FCFA");
+// question 2
+function planeRideCost(){
+    do{
+        destination=prompt("Entrer votre destination : ", );
+    }while(typeof(destination)=='string');
+    if(destination=="Londres"){
+        prix=183;
+    }
+    else if(destination=="Paris"){
+        prix=220;
+    }
+    else {
+        prix=300;
+    }
+    return prix;
+}
+planeRideCost();
+console.log(" Le prix de "+destination+" est "+prix);
+
+// question 3
+var nombreJour;
+var coutLocation;
+function rentalCarCost(){
+    do{
+        nombreJour=parseInt(prompt("Entrer le nombre de jour que vous souhaitez louer la voiture : "),);
+    }while(typeof(nombreJour)!="number");
+    coutLocation=40*nombreJour;
+    
+    if(nombreJour>10){
+        coutLocation=coutLocation-0.05*coutLocation;
+    }
+    return coutLocation;
+
+}
+rentalCarCost();
+console.log(" le cout de la loction de la voiture en "+nombreJour+" jour(s) est "+coutLocation);
+// question 4
+var coutAvion;
+var depenseVacation;
+function totalVacationCost(){
+    coutAvion=parseInt(prompt("Entrer le cout de l'avion : ",));
+    depenseVacation=coutAvion+coutLocation+somme+prix;
+    return depenseVacation;
+}
+console.log("le cout de l'avion est "+coutAvion);
+totalVacationCost();
+console.log("les depenses totales valent :");
+console.log(depenseVacation);
